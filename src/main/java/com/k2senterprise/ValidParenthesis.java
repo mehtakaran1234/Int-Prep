@@ -10,23 +10,21 @@ class ValidParenthesis {
 
 
     public Stack<Character> stack = new Stack<Character>();
+
     public boolean isValid(String s) {
 
-        for(int i=0; i < s.length(); i++ ){
-            if(openBraces.contains(s.charAt(i)))
+        for (int i = 0; i < s.length(); i++) {
+            if (openBraces.contains(s.charAt(i)))
                 stack.push(s.charAt(i));
-            else if(closeBraces.contains(s.charAt(i))){
+            else if (closeBraces.contains(s.charAt(i))) {
                 int index = closeBraces.indexOf(s.charAt(i));
-                //System.out.println("index:"+ index);
-                if(stack.peek() == openBraces.get(index))
+                if (!stack.isEmpty() && stack.peek() == openBraces.get(index))
                     stack.pop();
                 else
                     return false;
             }
         }
-        //System.out.println("s:"+ s);
-        //System.out.println("stack:"+ stack);
-        if(stack.isEmpty())
+        if (stack.isEmpty())
             return true;
         else
             return false;
@@ -56,6 +54,10 @@ class ValidParenthesis {
         System.out.println("Result: " + result);
 
         s = "([])";
+        result = validParenthesis.isValid(s);
+        System.out.println("Result: " + result);
+
+        s = "]";
         result = validParenthesis.isValid(s);
         System.out.println("Result: " + result);
 
