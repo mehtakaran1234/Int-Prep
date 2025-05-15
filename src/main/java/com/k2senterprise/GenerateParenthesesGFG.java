@@ -2,7 +2,10 @@ package com.k2senterprise;
 
 // java program to generate all the combinations of balanced
 // parenthesis.
-import java.util.ArrayList;
+import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.function.Predicate;
+
 class GenerateParenthesesGFG {
 
     // Function to generate valid parentheses sequences
@@ -15,6 +18,27 @@ class GenerateParenthesesGFG {
             res.add(curr);
             return;
         }
+       /* Predicate;
+        Comparator;
+        Comparable;*/
+
+ /*Map<String, Object> map = new NavigableMap<String, Object>();
+        HashSet;
+        HashMap;
+        TreeSet;
+        Collections;
+        Collection;
+        List;
+        Set;
+        Queue<Integer> queue = new LinkedList<>();
+        ArrayBlockingQueue;
+        Map;
+        Iterable;
+        Iterator;
+        LinkedList;
+        ArrayList;
+        ListIterator;
+        Stack;*/
 
         // Add opening parenthesis if we haven't used all n opening
         // parentheses
