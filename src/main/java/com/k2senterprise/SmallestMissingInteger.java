@@ -1,13 +1,21 @@
 package com.k2senterprise;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.Arrays;
 
 public class SmallestMissingInteger {
 
     public static int solution(int[] A) {
 
-        Map<Integer, Integer> map = new LinkedHashMap<>();
+        Arrays.sort(A);
+        int min = 1;
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] == min) {
+                min++;
+            }
+        }
+        return min;
+
+        /*Map<Integer, Integer> map = new LinkedHashMap<>();
         int missing = 1;
         for (int i = 0; i < A.length; i++) {
             if (A[i] > 0) {
@@ -22,7 +30,7 @@ public class SmallestMissingInteger {
                 }
             }
         }
-        return missing;
+        return missing;*/
     }
 
     public static void main(String[] args) {
