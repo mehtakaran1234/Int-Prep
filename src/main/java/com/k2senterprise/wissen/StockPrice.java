@@ -1,4 +1,4 @@
-package com.k2senterprise;
+package com.k2senterprise.wissen;
 
 /******************************************************************************
 
@@ -62,6 +62,26 @@ public class StockPrice {
             }
         }
         return maxProfit;
+    }
+
+    static int getSecondMaxProfit(int[] stockPrices) {
+        int maxProfit = 0;
+        int secondMaxProfit = 0;
+        int minPrice = Integer.MAX_VALUE;
+        for (int price : stockPrices) {
+            if (price < minPrice) {
+                minPrice = price;
+            } else {
+                int profit = price - minPrice;
+                if (profit > maxProfit) {
+                    secondMaxProfit = maxProfit;
+                    maxProfit = profit;
+                } else if (profit > secondMaxProfit && profit < maxProfit) {
+                    secondMaxProfit = profit;
+                }
+            }
+        }
+        return secondMaxProfit;
     }
 
 }

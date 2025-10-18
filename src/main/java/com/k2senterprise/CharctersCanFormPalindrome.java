@@ -4,11 +4,12 @@ public class CharctersCanFormPalindrome {
     public static void main(String[] args) {
         String str = "geeksogeeks";
         str = "geeksforgeeks";
-        str = "ivicc";
+
         str = "hello";
         str= "aabbcc";
         str= "aabbcd";
         str = "annabelle";
+        str = "ivicc";
         int evenCount = 0;
         int oddCount = 0;
 

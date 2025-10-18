@@ -1,4 +1,4 @@
-package com.k2senterprise;
+package com.k2senterprise.wissen;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
