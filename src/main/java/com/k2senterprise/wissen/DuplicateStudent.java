@@ -37,8 +37,8 @@ class Student
         if(obj == null || obj.getClass()!= this.getClass())
             return false;
 
-        Student Student = (Student) obj;
-        return (Student.name.equals(this.name) && Student.id == this.id);
+        StudentTest StudentTest = (StudentTest) obj;
+        return (StudentTest.name.equals(this.name) && StudentTest.id == this.id);
     }
 
     @Override
@@ -51,17 +51,17 @@ public class DuplicateStudent {
     public static void main(String[] args)
     {
 
-        Student g1 = new Student("aditya", 1);
-        Student g2 = new Student("aditya", 1);
+        StudentTest g1 = new StudentTest("aditya", 1);
+        StudentTest g2 = new StudentTest("aditya", 1);
 
-        Map<Student, String> map = new HashMap<>();
+        Map<StudentTest, String> map = new HashMap<>();
         map.put(g1, "CSE");
         map.put(g2, "IT");
 
-        for(Student student : map.keySet())
+        for(StudentTest studentTest : map.keySet())
         {
-            System.out.println("Key : " + student);
-            System.out.println("Value : " + map.get(student).toString());
+            System.out.println("Key : " + studentTest);
+            System.out.println("Value : " + map.get(studentTest).toString());
         }
     }
 }
