@@ -2,12 +2,12 @@ package com.k2senterprise.codility.task2;
 
 
 
-import com.codility.alert.Alert;
+/*import com.codility.alert.Alert;
 import com.codility.alert.AlertRepository;
 import com.codility.audit.AuditService;
 import com.codility.audit.DuplicatedAuditException;
 import com.codility.log.Log;
-import com.codility.log.LogRepository;
+import com.codility.log.LogRepository;*/
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
