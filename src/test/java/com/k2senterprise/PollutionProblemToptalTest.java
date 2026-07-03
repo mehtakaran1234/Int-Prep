@@ -70,4 +70,6 @@ class PollutionProblemToptalTest {
         double[] arr = {1, 1, 1};
         assertEquals(0, PollutionProblemToptal.solution(arr), "Failed for already reduced array {1, 1, 1}");
     }
+
+
 }

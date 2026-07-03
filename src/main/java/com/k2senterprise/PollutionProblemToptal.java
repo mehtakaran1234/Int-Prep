@@ -4,7 +4,7 @@ package com.k2senterprise;
 public class PollutionProblemToptal {
 
     public static void main(String[] args) {
-        /*double arr[] = {5, 19, 8, 1};
+        double arr[] = {5, 19, 8, 1};
         System.out.println("Output: " + solution(arr));
 
         double[] arr1 = new double[]{10, 10};
@@ -15,11 +15,38 @@ public class PollutionProblemToptal {
 
         double[] arr3 = new double[]{3, 5, 6, 1, 18};
         System.out.println("Output: " + solution(arr3));
-*/
         double[] arr4 = new double[]{1,1,1};
         System.out.println("Output: " + solution(arr4));
 
+        double[] arr5 = new double[]{2, 4, 8, 16, 32};
+        System.out.println("Output: " + solution(arr5));
 
+    }
+
+    public static int solution2(double[] arr) {
+        int operation = 0;
+        double originalSum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            originalSum += arr[i];
+        }
+        System.out.println("originalSum: " + originalSum);
+
+        double halfSum = originalSum / 2;
+        java.util.PriorityQueue<Double> maxHeap = new java.util.PriorityQueue<>((a, b) -> Double.compare(b, a));
+        for (double num : arr) {
+            maxHeap.offer(num);
+        }
+
+        double currentSum = originalSum;
+        while (currentSum > halfSum) {
+            double largest = maxHeap.poll();
+            double reduced = largest / 2;
+            currentSum -= reduced;
+            maxHeap.offer(reduced);
+            operation++;
+        }
+
+        return operation;
     }
 
     public static int solution(double[] arr) {

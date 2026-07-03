@@ -1,0 +1,84 @@
+Your Google Pay app has several saved accounts, now you wish to make a transaction using one of the saved accounts but you have only some information about that account.
+
+
+Format of information of an account
+
+
+<bank account_number> <account holder_first_name> <account_holder_last_name> <registered_mobile_number> <branch_code>
+
+
+Task
+
+
+Your task is to give all the information of the saved accounts in increasing order of Bank account numbers based on the user's input information.
+
+
+Note:
+
+
+• No two accounts can have the same account number of registered_mobile_number.
+
+
+• At least one record will match with the user's input information
+
+Example
+
+
+Your test will end in 10 minutes. Ensure tha
+
+
+1
+
+
+Assumptions
+
+
+N=3
+
+
+2
+
+
+• A=[[11221909312, rohan, garg, 7384728384, 1022]. [11221909566, shivam, kumar, 9128494856, 1022], [11201339211, shivam, sharma, 7384728384, 1987]]
+
+
+⚫ account holder_first_name
+
+
+⚫ shivam
+
+
+Approach
+
+
+• Output will be
+
+
+.11201339211 shivam sharma 7384728384 1987
+
+
+• 11221909566 shivam kumar 9128494856 1022
+
+
+Function description
+
+
+Complete the function solve provided in the editor. This function takes the following 4 parameters and returns the required answer:
+
+
+N: the number of saved accounts
+
+
+A: is the 2Dvector of the string denoting the information of N saved accounts.
+
+
+D: denoting the name of information the user has
+
+
+⚫V: denoting the value of that information.
+
+
+Input format
+
+
+Note: This is the input format that you must use to provide custom input (available above the Compile and Test button).

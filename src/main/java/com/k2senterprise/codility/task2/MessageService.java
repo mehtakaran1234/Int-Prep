@@ -1,12 +1,8 @@
+/*
 package com.k2senterprise.codility.task2;
 
 
-import com.codility.audit.AuditException;
-import com.codility.audit.DuplicatedAuditException;
-import com.codility.message.Message;
-import com.codility.message.MessageRepository;
-import com.codility.notification.NotificationException;
-import com.codility.notification.NotificationService;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,3 +41,4 @@ public class MessageService {
     }
 }
 
+*/

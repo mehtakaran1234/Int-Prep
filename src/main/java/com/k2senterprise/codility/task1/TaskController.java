@@ -1,3 +1,4 @@
+/*
 package com.k2senterprise.codility.task1;
 
 @RestController
@@ -81,3 +82,4 @@ public class TaskController {
     }
 }
 
+*/

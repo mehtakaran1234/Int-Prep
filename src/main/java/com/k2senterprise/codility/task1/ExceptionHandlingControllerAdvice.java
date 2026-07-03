@@ -1,5 +1,11 @@
 package com.k2senterprise.codility.task1;
 
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+
 @RestControllerAdvice
 @ControllerAdvice
 public class ExceptionHandlingControllerAdvice {

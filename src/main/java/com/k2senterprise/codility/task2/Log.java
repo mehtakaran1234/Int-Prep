@@ -1,19 +1,21 @@
+/*
 package com.k2senterprise.codility.task2;
 
 @Entity
 @EqualsAndHashCode
-public class Alert {
+public class Log {
     @Id
     private UUID id;
-    private String author;
     private String title;
+    private String content;
 
-    private Alert() {}
+    private Log() {}
 
-    public Alert(UUID id, String author, String title) {
+    public Log(UUID id, String title, String content) {
         this.id = id;
-        this.author = author;
         this.title = title;
+        this.content = content;
     }
 }
 
+*/

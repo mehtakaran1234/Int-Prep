@@ -1,3 +1,4 @@
+/*
 package com.k2senterprise.codility.task2;
 
 
@@ -37,3 +38,4 @@ public class MonitoringService {
 }
 
 
+*/
