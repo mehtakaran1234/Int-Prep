@@ -1,4 +1,4 @@
-package com.k2senterprise.practice;
+package com.k2senterprise.practice.duplicatefile;
 
 import java.io.IOException;
 import java.io.InputStream;
